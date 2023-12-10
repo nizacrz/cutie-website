@@ -17,13 +17,12 @@ body.index {
   position: absolute;
   left: 20px;
   top: 20px;
-
-  border-radius: 10px; /* Optional: Add rounded corners */
+  border-radius: 10px;
 }
 
 .icon {
   text-align: center;
-  margin-bottom: 20px; /* Add margin to create spacing between icons */
+  margin-bottom: 20px;
   text-decoration: none;
   color: black;
 }
@@ -34,13 +33,13 @@ body.index {
 }
 
 .icon img {
-  width: 100px; /* Set the width of the icon image */
-  height: 100px; /* Set the height of the icon image */
+  width: 100px;
+  height: 100px;
 }
 
 .icon span {
   display: block;
-  margin-bottom: 10px; /* Adjust the margin for spacing between image and text */
+  margin-bottom: 10px;
 }
 
 /* Updated CSS */
@@ -53,30 +52,28 @@ body.index {
   ); /* Salmon pink color with transparency */
   color: white;
   padding: 10px;
-  height: 50px; /* Set a fixed height */
+  height: 50px;
   position: fixed;
   bottom: 0;
   width: 100%;
   display: flex;
-  backdrop-filter: blur(10px); /* Apply blur effect for glass morphism */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-  align-items: center; /* Add align-items for vertical centering */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
 }
 
-/* Updated CSS */
 .start-menu {
   display: flex;
   align-items: center;
-  margin-right: 10px; /* Add margin to separate the image from the text */
+  margin-right: 10px;
 }
 
 .start-menu img {
-  width: 95px; /* Set the width of the image */
-  height: 95px; /* Set the height of the image */
+  width: 95px;
+  height: 95px;
   margin-right: 20px;
 }
 
-/* Updated CSS for Opened Apps */
 .opened-app {
   display: flex;
   align-items: center;
@@ -85,26 +82,25 @@ body.index {
 
 .opened-app img,
 .opened-app .icon {
-  width: 45px; /* Set the width of the opened app logo and icon */
-  height: 45px; /* Set the height of the opened app logo and icon */
-  margin-right: 8px; /* Add margin to separate the logos and icons */
+  width: 45px;
+  height: 45px;
+  margin-right: 8px;
 }
 
 .opened-app .icon img {
-  vertical-align: middle; /* Align the icon images vertically in the middle */
+  vertical-align: middle;
 }
 
-/* Updated CSS for Time and Date */
 .time-date {
   display: flex;
-  flex-direction: column; /* Stack items vertically */
+  flex-direction: column;
   align-items: flex-end;
-  margin-left: auto; /* Use margin-left:auto to push it to the right corner */
-  margin-right: 20px; /* Add margin to separate from the right edge */
+  margin-left: auto;
+  margin-right: 20px;
 }
 
 #current-time {
-  margin-bottom: 5px; /* Adjust the margin to provide space between time and date */
+  margin-bottom: 5px;
 }
 
 /*ABOUT HTML*/
@@ -115,8 +111,8 @@ body.about {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Ensure the body takes up the full viewport height */
-  margin: 0; /* Remove default margin to prevent unwanted spacing */
+  height: 100vh;
+  margin: 0;
   background-color: #f0f0f0;
   color: #333;
 }
@@ -128,8 +124,8 @@ h1 {
 }
 
 #trackMoodBtn {
-  --b: 3px; /* border thickness */
-  --s: 0.45em; /* size of the corner */
+  --b: 3px;
+  --s: 0.45em;
   --color: #373b44;
 
   padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
@@ -167,16 +163,16 @@ h1 {
 }
 
 #displayQuotes {
-  margin-top: 20px; /* Adjust margin-top as needed */
-  font-size: 18px; /* Change the font size as needed */
-  color: #f0f0f0; /* Change the text color as needed */
-  padding: 20px; /* Adjust padding as needed */
-  border-left: 4px solid #f0f0f0; /* Adjust border-left color and thickness as needed */
+  margin-top: 20px;
+  font-size: 18px;
+  color: #f0f0f0;
+  padding: 20px;
+  border-left: 4px solid #f0f0f0;
 }
 
 blockquote {
-  font-style: italic; /* Italicize the quote text */
-  margin: 10px 0; /* Adjust margin as needed */
+  font-style: italic;
+  margin: 10px 0;
 }
 
 /*FAVORITES HTML*/
@@ -186,8 +182,8 @@ body.favorites {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Ensure the body takes up the full viewport height */
-  margin: 0; /* Remove default margin to prevent unwanted spacing */
+  height: 100vh;
+  margin: 0;
   background-color: #ff8674;
   color: #333;
 }
