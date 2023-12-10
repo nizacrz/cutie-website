@@ -62,7 +62,7 @@ function checkMoodColor() {
         document.getElementById(
           "displayQuotes"
         ).innerHTML += `<p style="color: white;">Here's a quote for you:</p>
-  <blockquote style="color: white;">"Tears come from the heart and not from the brain." - Leonardo da Vinci</blockquote>`;
+  <blockquote style="color: white;">"The waves always pass."</blockquote>`;
       } else if (userMood === "motivated") {
         document.getElementById(
           "displayQuotes"
