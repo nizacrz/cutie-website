@@ -169,9 +169,9 @@ h1 {
 #displayQuotes {
   margin-top: 20px; /* Adjust margin-top as needed */
   font-size: 18px; /* Change the font size as needed */
-  color: white; /* Change the text color as needed */
+  color: #f0f0f0; /* Change the text color as needed */
   padding: 20px; /* Adjust padding as needed */
-  border-left: 4px solid #ffffff; /* Adjust border-left color and thickness as needed */
+  border-left: 4px solid #f0f0f0; /* Adjust border-left color and thickness as needed */
 }
 
 blockquote {
