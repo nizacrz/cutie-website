@@ -178,3 +178,98 @@ blockquote {
   font-style: italic; /* Italicize the quote text */
   margin: 10px 0; /* Adjust margin as needed */
 }
+
+/*FAVORITES HTML*/
+body.favorites {
+  display: flex;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensure the body takes up the full viewport height */
+  margin: 0; /* Remove default margin to prevent unwanted spacing */
+  background-color: #ff8674;
+  color: #333;
+}
+
+#favoritesList {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.12);
+  transition: background-color 0.3s ease;
+}
+
+#favoritesList h2 {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#favoritesList p {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+#generateFavoritesBtn {
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#generateFavoritesBtn:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform 0.2s ease-out;
+  z-index: -1;
+}
+
+.button-generateFavoritesBtn:hover:after {
+  transform: translate(0, 0);
+}
+
+.generateFavoritesBtn-56:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.generateFavoritesBtn:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .generateFavoritesBtn {
+    padding: 0 40px;
+  }
+}
