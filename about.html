@@ -3,34 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Niza's Corner</title>
+    <title>About Niza</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="icon" type="image/png" href="assets/nizaa.png" />
   </head>
-  <body class="index">
-    <!-- Updated HTML -->
-    <div class="desktop">
-      <a href="about.html" class="icon">
-        <img src="assets/about-icon.png" alt="About Icon" />
-        <span>ABOUT</span>
-      </a>
-      <a href="favorites.html" class="icon">
-        <img src="assets/favorites-icon.png" alt="Favorites Icon" />
-        <span>FAVORITES</span>
-      </a>
-      <a
-        href="https://www.canva.com/design/DAF1QyeaEko/aDf6w4BcHv6NkBl5A-k3lQ/view?utm_content=DAF1QyeaEko&utm_campaign=designshare&utm_medium=link&utm_source=editor"
-        class="icon"
-      >
-        <img src="assets/cv-icon.png" alt="CV Icon" />
-
-        <span>CV</span>
-      </a>
-    </div>
+  <body class="about" id="aboutBody">
+    <h1>How are you feeling today?</h1>
+    <button id="trackMoodBtn" onclick="checkMoodColor()">
+      Track Your Mood
+    </button>
+    <div id="displayQuotes"></div>
 
     <!-- TASKBAR -->
     <div class="taskbar">
@@ -58,7 +39,6 @@
         <span id="current-date"></span>
       </div>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>

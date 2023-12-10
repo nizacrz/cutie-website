@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Pacifico&family=Poppins:ital,wght@0,100;0,400;0,500;0,900;1,400&display=swap");
+body.index {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("assets/niza-wallpaper.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+
+  border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.icon {
+  text-align: center;
+  margin-bottom: 20px; /* Add margin to create spacing between icons */
+  text-decoration: none;
+  color: black;
+}
+
+.icon a {
+  text-decoration: none;
+  color: black;
+}
+
+.icon img {
+  width: 100px; /* Set the width of the icon image */
+  height: 100px; /* Set the height of the icon image */
+}
+
+.icon span {
+  display: block;
+  margin-bottom: 10px; /* Adjust the margin for spacing between image and text */
+}
+
+/* Updated CSS */
+.taskbar {
+  background: rgba(
+    255,
+    182,
+    193,
+    0.4
+  ); /* Salmon pink color with transparency */
+  color: white;
+  padding: 10px;
+  height: 50px; /* Set a fixed height */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  backdrop-filter: blur(10px); /* Apply blur effect for glass morphism */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  align-items: center; /* Add align-items for vertical centering */
+}
+
+/* Updated CSS */
+.start-menu {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Add margin to separate the image from the text */
+}
+
+.start-menu img {
+  width: 95px; /* Set the width of the image */
+  height: 95px; /* Set the height of the image */
+  margin-right: 20px;
+}
+
+/* Updated CSS for Opened Apps */
+.opened-app {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.opened-app img,
+.opened-app .icon {
+  width: 45px; /* Set the width of the opened app logo and icon */
+  height: 45px; /* Set the height of the opened app logo and icon */
+  margin-right: 8px; /* Add margin to separate the logos and icons */
+}
+
+.opened-app .icon img {
+  vertical-align: middle; /* Align the icon images vertically in the middle */
+}
+
+/* Updated CSS for Time and Date */
+.time-date {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-end;
+  margin-left: auto; /* Use margin-left:auto to push it to the right corner */
+  margin-right: 20px; /* Add margin to separate from the right edge */
+}
+
+#current-time {
+  margin-bottom: 5px; /* Adjust the margin to provide space between time and date */
+}
+
+/*ABOUT HTML*/
+
+body.about {
+  display: flex;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensure the body takes up the full viewport height */
+  margin: 0; /* Remove default margin to prevent unwanted spacing */
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+h1 {
+  font-family: "Cedarville Cursive", sans-serif;
+  align-items: center;
+  font-size: 75px;
+}
+
+#trackMoodBtn {
+  --b: 3px; /* border thickness */
+  --s: 0.45em; /* size of the corner */
+  --color: #373b44;
+
+  padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: 0.6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#trackMoodBtn:hover,
+#trackMoodBtn:focus-visible {
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: 0.05em;
+}
+
+#trackMoodBtn:active {
+  background: var(--color);
+  color: #fff;
+}
+
+#displayQuotes {
+  margin-top: 20px; /* Adjust margin-top as needed */
+  font-size: 18px; /* Change the font size as needed */
+  color: white; /* Change the text color as needed */
+  padding: 20px; /* Adjust padding as needed */
+  border-left: 4px solid #ffffff; /* Adjust border-left color and thickness as needed */
+}
+
+blockquote {
+  font-style: italic; /* Italicize the quote text */
+  margin: 10px 0; /* Adjust margin as needed */
+}
